@@ -1,8 +1,9 @@
-// Add imports above this line
-
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 import { galleryItems } from './gallery-items';
 
 const gallery = document.querySelector('.gallery');
+
 function createGalleryCardEl(galleres) {
   return galleres
     .map(({ preview, original, description }) => {
@@ -24,6 +25,3 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
-// Change code below this line
-
-console.log(galleryItems);
